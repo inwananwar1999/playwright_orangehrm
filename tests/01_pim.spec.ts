@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test';
 import * as path from 'path';
+test.describe.configure({ mode: 'serial' });
 
 test.describe('Menu PIM',()=>{
   test.beforeEach(async({page})=>{
